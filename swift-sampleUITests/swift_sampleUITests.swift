@@ -2,8 +2,6 @@
 //  swift_sampleUITests.swift
 //  swift-sampleUITests
 //
-//  Created on 2024/08/30.
-//
 
 import XCTest
 

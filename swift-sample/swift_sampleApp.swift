@@ -2,8 +2,6 @@
 //  swift_sampleApp.swift
 //  swift-sample
 //
-//  Created on 2024/08/30.
-//
 
 import SwiftUI
 
