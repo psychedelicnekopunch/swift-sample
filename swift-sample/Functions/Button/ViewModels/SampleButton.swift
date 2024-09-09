@@ -1,7 +1,3 @@
-//
-//  SampleButton.swift
-//  swift-sample
-//
 
 import UIKit
 

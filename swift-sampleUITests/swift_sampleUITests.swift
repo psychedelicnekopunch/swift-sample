@@ -1,7 +1,3 @@
-//
-//  swift_sampleUITests.swift
-//  swift-sampleUITests
-//
 
 import XCTest
 

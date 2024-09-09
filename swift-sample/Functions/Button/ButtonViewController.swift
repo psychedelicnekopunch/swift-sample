@@ -1,7 +1,3 @@
-//
-//  ButtonViewController.swift
-//  swift-sample
-//
 
 import UIKit
 

@@ -1,7 +1,3 @@
-//
-//  AppDelegate.swift
-//  swift-sample
-//
 
 import UIKit
 

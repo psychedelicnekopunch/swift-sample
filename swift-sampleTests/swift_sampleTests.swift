@@ -1,7 +1,3 @@
-//
-//  swift_sampleTests.swift
-//  swift-sampleTests
-//
 
 import XCTest
 @testable import swift_sample
