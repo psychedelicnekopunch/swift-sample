@@ -12,7 +12,8 @@ class MenuListViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         print("MenuListViewController")
-        self.view.layer.backgroundColor = UIColor(red: 0.2, green: 0.7, blue: 0.7, alpha: 1.0).cgColor
+        
+        self.view.layer.backgroundColor = UIColor.cyan.cgColor
     }
     
     

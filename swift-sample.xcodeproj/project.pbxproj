@@ -17,6 +17,7 @@
 		092C08ED2C841B5000FE5A6F /* swift_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C08EC2C841B5000FE5A6F /* swift_sampleUITests.swift */; };
 		092C08EF2C841B5000FE5A6F /* swift_sampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C08EE2C841B5000FE5A6F /* swift_sampleUITestsLaunchTests.swift */; };
 		092C09012C841F3400FE5A6F /* SampleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C09002C841F3400FE5A6F /* SampleButton.swift */; };
+		0969B6942C8EE73400644EB8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0969B6932C8EE73400644EB8 /* UIColorExtension.swift */; };
 		099C4FC12C8D739000D1EC8B /* MenuListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099C4FC02C8D739000D1EC8B /* MenuListModel.swift */; };
 		099C4FC32C8D746D00D1EC8B /* MenuListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099C4FC22C8D746D00D1EC8B /* MenuListItems.swift */; };
 		099C4FC52C8D748A00D1EC8B /* MenuListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099C4FC42C8D748A00D1EC8B /* MenuListItem.swift */; };
@@ -63,6 +64,7 @@
 		092C08EC2C841B5000FE5A6F /* swift_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_sampleUITests.swift; sourceTree = "<group>"; };
 		092C08EE2C841B5000FE5A6F /* swift_sampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_sampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		092C09002C841F3400FE5A6F /* SampleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleButton.swift; sourceTree = "<group>"; };
+		0969B6932C8EE73400644EB8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		099C4FC02C8D739000D1EC8B /* MenuListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListModel.swift; sourceTree = "<group>"; };
 		099C4FC22C8D746D00D1EC8B /* MenuListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListItems.swift; sourceTree = "<group>"; };
 		099C4FC42C8D748A00D1EC8B /* MenuListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListItem.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				099C4FBD2C8D720200D1EC8B /* Database */,
 				099C4FBE2C8D720500D1EC8B /* Domain */,
+				0969B6922C8EE4C100644EB8 /* Extensions */,
 				099C4FBA2C85BC1100D1EC8B /* Functions */,
 				09C7C6B52C846E08001E78EB /* Utils */,
 				092C08CB2C841B4F00FE5A6F /* AppDelegate.swift */,
@@ -205,6 +208,14 @@
 				092C09002C841F3400FE5A6F /* SampleButton.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0969B6922C8EE4C100644EB8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0969B6932C8EE73400644EB8 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		099C4FBA2C85BC1100D1EC8B /* Functions */ = {
@@ -493,6 +504,7 @@
 				09C7C6A92C84423E001E78EB /* ButtonViewController.swift in Sources */,
 				092C08CE2C841B4F00FE5A6F /* SceneDelegate.swift in Sources */,
 				099C4FC12C8D739000D1EC8B /* MenuListModel.swift in Sources */,
+				0969B6942C8EE73400644EB8 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
