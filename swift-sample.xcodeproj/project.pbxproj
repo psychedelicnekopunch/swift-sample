@@ -153,7 +153,6 @@
 			children = (
 				099C4FBD2C8D720200D1EC8B /* Database */,
 				099C4FBE2C8D720500D1EC8B /* Domain */,
-				0969B6922C8EE4C100644EB8 /* Extensions */,
 				099C4FBA2C85BC1100D1EC8B /* Functions */,
 				09C7C6B52C846E08001E78EB /* Utils */,
 				092C08CB2C841B4F00FE5A6F /* AppDelegate.swift */,
@@ -274,6 +273,7 @@
 		09C7C6B52C846E08001E78EB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0969B6922C8EE4C100644EB8 /* Extensions */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
