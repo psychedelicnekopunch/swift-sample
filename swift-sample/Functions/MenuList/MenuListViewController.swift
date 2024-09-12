@@ -26,7 +26,21 @@ class MenuListViewController: UIViewController {
     private func initTableView() {
         self.menuListTableView.initList()
         self.menuListTableView.didSelectRowAt = { cell, tableView, indexPath in
-            print(cell.itemType)
+            self.gotoNextPage(itemType: cell.itemType)
+        }
+    }
+    
+    
+    private func gotoNextPage(itemType: MenuListItem.ItemType) {
+        switch itemType {
+        case .Button:
+            let storyboard: UIStoryboard = UIStoryboard.init(name: "Button", bundle: nil)
+            let vc: ButtonViewController = storyboard.instantiateViewController(withIdentifier: "Button") as! ButtonViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case .Error:
+            print("ERROR")
+            break
         }
     }
 

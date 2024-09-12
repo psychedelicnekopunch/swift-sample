@@ -45,7 +45,7 @@ class MenuListTableView: UITableView, UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        print("call cell")
+//        print("call cell")
         
         let menuListItem: MenuListItem = self.lists[indexPath.section].lists[indexPath.row]
         

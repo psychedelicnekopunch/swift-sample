@@ -17,6 +17,9 @@
 		092C08ED2C841B5000FE5A6F /* swift_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C08EC2C841B5000FE5A6F /* swift_sampleUITests.swift */; };
 		092C08EF2C841B5000FE5A6F /* swift_sampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C08EE2C841B5000FE5A6F /* swift_sampleUITestsLaunchTests.swift */; };
 		092C09012C841F3400FE5A6F /* SampleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C09002C841F3400FE5A6F /* SampleButton.swift */; };
+		0950F8F32C92CF98000AD5EC /* DisableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0950F8F22C92CF98000AD5EC /* DisableButton.swift */; };
+		0950F8F52C92D15E000AD5EC /* SystemBGColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0950F8F42C92D15E000AD5EC /* SystemBGColorView.swift */; };
+		0950F8F72C92DA53000AD5EC /* SampleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0950F8F62C92DA53000AD5EC /* SampleLabel.swift */; };
 		0969B6942C8EE73400644EB8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0969B6932C8EE73400644EB8 /* UIColorExtension.swift */; };
 		099C4FC12C8D739000D1EC8B /* MenuListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099C4FC02C8D739000D1EC8B /* MenuListModel.swift */; };
 		099C4FC32C8D746D00D1EC8B /* MenuListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099C4FC22C8D746D00D1EC8B /* MenuListItems.swift */; };
@@ -64,6 +67,9 @@
 		092C08EC2C841B5000FE5A6F /* swift_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_sampleUITests.swift; sourceTree = "<group>"; };
 		092C08EE2C841B5000FE5A6F /* swift_sampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_sampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		092C09002C841F3400FE5A6F /* SampleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleButton.swift; sourceTree = "<group>"; };
+		0950F8F22C92CF98000AD5EC /* DisableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableButton.swift; sourceTree = "<group>"; };
+		0950F8F42C92D15E000AD5EC /* SystemBGColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemBGColorView.swift; sourceTree = "<group>"; };
+		0950F8F62C92DA53000AD5EC /* SampleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLabel.swift; sourceTree = "<group>"; };
 		0969B6932C8EE73400644EB8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		099C4FC02C8D739000D1EC8B /* MenuListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListModel.swift; sourceTree = "<group>"; };
 		099C4FC22C8D746D00D1EC8B /* MenuListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListItems.swift; sourceTree = "<group>"; };
@@ -204,7 +210,10 @@
 		092C08FD2C841EDE00FE5A6F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0950F8F22C92CF98000AD5EC /* DisableButton.swift */,
 				092C09002C841F3400FE5A6F /* SampleButton.swift */,
+				0950F8F62C92DA53000AD5EC /* SampleLabel.swift */,
+				0950F8F42C92D15E000AD5EC /* SystemBGColorView.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -498,12 +507,15 @@
 				099C4FC32C8D746D00D1EC8B /* MenuListItems.swift in Sources */,
 				092C08D02C841B4F00FE5A6F /* MainViewController.swift in Sources */,
 				09C7C6B42C8445B1001E78EB /* MenuListTableViewCell.swift in Sources */,
+				0950F8F72C92DA53000AD5EC /* SampleLabel.swift in Sources */,
 				092C08CC2C841B4F00FE5A6F /* AppDelegate.swift in Sources */,
+				0950F8F32C92CF98000AD5EC /* DisableButton.swift in Sources */,
 				09C7C6B22C8445A4001E78EB /* MenuListTableView.swift in Sources */,
 				09C7C6AF2C844566001E78EB /* MenuListViewController.swift in Sources */,
 				09C7C6A92C84423E001E78EB /* ButtonViewController.swift in Sources */,
 				092C08CE2C841B4F00FE5A6F /* SceneDelegate.swift in Sources */,
 				099C4FC12C8D739000D1EC8B /* MenuListModel.swift in Sources */,
+				0950F8F52C92D15E000AD5EC /* SystemBGColorView.swift in Sources */,
 				0969B6942C8EE73400644EB8 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

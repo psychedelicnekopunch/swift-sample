@@ -4,14 +4,16 @@ import UIKit
 class ButtonViewController: UIViewController {
     
     
-    @IBOutlet weak var SampleButton: SampleButton!
+    @IBOutlet weak var sampleLabel: SampleLabel!
+    
+    @IBOutlet weak var sampleButton: SampleButton!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print("ButtonViewController")
+//        print("ButtonViewController")
         self.initButton()
     }
     
@@ -28,14 +30,9 @@ class ButtonViewController: UIViewController {
     
 
     func initButton() {
-        SampleButton.addAction(.init(handler: { uiaction in
-            self.gotoMenuList()
-        }), for: .touchDown)
-    }
-
-    
-    func gotoMenuList() {
-        print("gotoMenuList")
+        self.sampleButton.touchDown = {
+            self.sampleLabel.countUp()
+        }
     }
 
 }

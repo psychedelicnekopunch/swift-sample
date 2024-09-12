@@ -17,31 +17,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="SampleButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lV-nq-Npd" customClass="SampleButton" customModule="swift_sample" customModuleProvider="target">
-                                <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tby-S1-ETh" customClass="SystemBGColorView" customModule="swift_sample" customModuleProvider="target">
+                                <rect key="frame" x="76.666666666666686" y="356" width="240" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egP-tf-Lr3" customClass="DisableButton" customModule="swift_sample" customModuleProvider="target">
+                                        <rect key="frame" x="79.666666666666686" y="85" width="80.333333333333314" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Disable"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="SampleButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lV-nq-Npd" customClass="SampleButton" customModule="swift_sample" customModuleProvider="target">
+                                        <rect key="frame" x="82.333333333333329" y="20" width="74.999999999999986" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="egP-tf-Lr3" secondAttribute="bottom" constant="20" id="0T9-GJ-MVg"/>
+                                    <constraint firstAttribute="width" constant="240" id="3fy-OJ-pS0"/>
+                                    <constraint firstItem="0lV-nq-Npd" firstAttribute="centerX" secondItem="tby-S1-ETh" secondAttribute="centerX" id="8Ce-Wg-knz"/>
+                                    <constraint firstItem="0lV-nq-Npd" firstAttribute="top" secondItem="tby-S1-ETh" secondAttribute="top" constant="20" id="BJX-ts-fg6"/>
+                                    <constraint firstAttribute="height" constant="140" id="Ldp-nZ-j8e"/>
+                                    <constraint firstItem="egP-tf-Lr3" firstAttribute="centerX" secondItem="tby-S1-ETh" secondAttribute="centerX" id="MZc-CV-5oS"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6M-FW-eTO" customClass="SampleLabel" customModule="swift_sample" customModuleProvider="target">
+                                <rect key="frame" x="179.33333333333334" y="319" width="34.666666666666657" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0lV-nq-Npd" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="IRm-C8-j3S"/>
-                            <constraint firstItem="0lV-nq-Npd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="qHA-7s-Xvz"/>
+                            <constraint firstItem="tby-S1-ETh" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="7p6-9L-tJC"/>
+                            <constraint firstItem="tby-S1-ETh" firstAttribute="top" secondItem="y6M-FW-eTO" secondAttribute="bottom" constant="20" id="AWa-pn-7O1"/>
+                            <constraint firstItem="tby-S1-ETh" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Jhv-xM-GME"/>
+                            <constraint firstItem="y6M-FW-eTO" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="fGq-uI-Js3"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="SampleButton" destination="0lV-nq-Npd" id="Sao-qj-Ptr"/>
+                        <outlet property="sampleButton" destination="0lV-nq-Npd" id="q7c-Z5-9Jy"/>
+                        <outlet property="sampleLabel" destination="y6M-FW-eTO" id="Nbu-lp-USo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21" y="4"/>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

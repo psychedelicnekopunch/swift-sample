@@ -1,9 +1,7 @@
 
 import UIKit
 
-class SampleButton: UIButton {
-    
-    var touchDown: (() -> Void)?
+class SampleLabel: UILabel {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -13,25 +11,29 @@ class SampleButton: UIButton {
     }
     */
     
-
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-//        fatalError("init(coder:) has not been implemented")
         self.initStyle()
-        self.initAction()
     }
     
     
     private func initStyle() {
-        self.setTitle("ボタン", for: .normal)
-        self.setTitle("タップ", for: .highlighted)
+        self.text = "0"
     }
     
     
-    private func initAction() {
-        self.addAction(.init(handler: { uiAction in
-            self.touchDown!()
-        }), for: .touchDown)
+    func countUp() {
+        guard let str: String = self.text else {
+            print("ERROR: in SampleLabel")
+            return
+        }
+        guard var cnt: Int = Int.init(str) else {
+            print("ERROR: in SampleLabel")
+            return
+        }
+        cnt += 1
+        self.text = "\(cnt)"
     }
-    
+
 }
