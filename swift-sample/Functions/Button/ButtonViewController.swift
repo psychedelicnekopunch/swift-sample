@@ -29,10 +29,23 @@ class ButtonViewController: UIViewController {
     */
     
 
-    func initButton() {
-        self.sampleButton.touchDown = {
+    private func initButton() {
+        self.sampleButton.touchUpInside = {
             self.sampleLabel.countUp()
         }
+        self.sampleButton.longPress = {
+            self.showAlert()
+        }
+    }
+    
+    
+    private func showAlert() {
+        let alert: UIAlertController = UIAlertController(title: "アラート", message: "長押しです", preferredStyle: .alert)
+        let action: UIAlertAction = UIAlertAction(title: "OK", style: .default) { uiAction in
+            print("default")
+        }
+        alert.addAction(action)
+        self.present(alert, animated: true)
     }
 
 }
