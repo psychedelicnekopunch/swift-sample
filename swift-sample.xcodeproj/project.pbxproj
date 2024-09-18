@@ -70,6 +70,7 @@
 		0950F8F22C92CF98000AD5EC /* DisableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableButton.swift; sourceTree = "<group>"; };
 		0950F8F42C92D15E000AD5EC /* SystemBGColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemBGColorView.swift; sourceTree = "<group>"; };
 		0950F8F62C92DA53000AD5EC /* SampleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLabel.swift; sourceTree = "<group>"; };
+		0950F8F82C9424AA000AD5EC /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0969B6932C8EE73400644EB8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		099C4FC02C8D739000D1EC8B /* MenuListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListModel.swift; sourceTree = "<group>"; };
 		099C4FC22C8D746D00D1EC8B /* MenuListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListItems.swift; sourceTree = "<group>"; };
@@ -166,6 +167,7 @@
 				092C08D42C841B5000FE5A6F /* Assets.xcassets */,
 				092C08D62C841B5000FE5A6F /* LaunchScreen.storyboard */,
 				092C08D92C841B5000FE5A6F /* Info.plist */,
+				0950F8F82C9424AA000AD5EC /* MyPlayground.playground */,
 			);
 			path = "swift-sample";
 			sourceTree = "<group>";
