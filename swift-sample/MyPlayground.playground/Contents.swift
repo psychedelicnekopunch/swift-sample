@@ -92,3 +92,38 @@ map.forEach { (key: String, value: String) in
     print("\(key): \(value)")
 }
 
+
+
+//-------------------------
+// アルゴリズム
+//-------------------------
+
+
+//let testStr: String = "testdesuyo"
+//let testArr: [Substring] = testStr.split(separator: "")
+
+func testToArray(str: String) -> [String] {
+    let arr: [Substring] = str.split(separator: "")
+    var res: [String] = [String]()
+    for v in arr {
+        res.append(String(v))
+    }
+    return res
+}
+
+var testArr: [String] = testToArray(str: "testdesuyo")
+print(testArr)
+
+var testRes: String = ""
+
+while true {
+    let i: Int = testArr.count - 1
+    if i < 0 {
+        break
+    }
+    testRes = "\(testRes)\(testArr[i])"
+    testArr.remove(at: i)
+}
+
+print(testRes)
+
