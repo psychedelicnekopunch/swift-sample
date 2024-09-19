@@ -6,10 +6,14 @@ target 'swift-sample' do
   use_frameworks!
 
   # Pods for swift-sample
+  pod 'RxSwift', '6.7.1'
+  pod 'RxCocoa', '6.7.1'
 
   target 'swift-sampleTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxBlocking', '6.7.1'
+    pod 'RxTest', '6.7.1'
   end
 
   target 'swift-sampleUITests' do
